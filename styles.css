@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px 20px;
+    background: #f4f4f4;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gallery-item p {
+    text-align: center;
+    margin: 0;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    /* This centers the buttons in the flex container */
+    align-items: center;
+    /* This vertically centers the buttons if needed */
+    gap: 10px;
+    /* Space between buttons */
+    margin-top: 20px;
+    /* Space above the button container */
+    margin-bottom: 20px;
+    /* Space below the button container */
+}
+
+.btn-previous,
+.btn-next {
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    text-align: center;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
