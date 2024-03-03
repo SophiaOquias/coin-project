@@ -8,7 +8,7 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
     max-width: 1200px;
@@ -49,7 +49,7 @@ body {
     margin-top: 20px;
     /* Space above the button container */
     margin-bottom: 20px;
-    /* Space below the button container */
+    /*Space below the button container */
 }
 
 .btn-previous,
