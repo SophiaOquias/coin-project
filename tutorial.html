@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="tab-counter">Tab count: 0</div>
+    <button id="reset-button" tabindex="-1">Reset Count</button>
+
+    <p>Instructions</p>
+    <p>Press <i><b>Tab</b></i> to navigate forwards</p>
+    <p>Press <i><b>Shift + Tab</b></i> to navigate backwards</p>
+    <p>Press <i><b>Enter</b></i> to select an item</p>
+
+    <div class="gallery">
+        <!-- Item 1 -->
+        <div class="gallery-item" tabindex="0">
+            <img src="tutorial/bibble.jpg" alt="bibble">
+            <p>Bibble</p>
+        </div>
+        <!-- and so on for other items -->
+        <div class="gallery-item" tabindex="0">
+            <img src="tutorial/fungus maximus.jpg" alt="fungus maximus">
+            <p>Fungus Maximus</p>
+        </div>
+        <div class="gallery-item" tabindex="0">
+            <img src="tutorial/laverna.jpg" alt="laverna">
+            <p>Laverna</p>
+        </div>
+        <div class="gallery-item" tabindex="0">
+            <img src="tutorial/lily and sparkles.jpg" alt="lily and sparkles">
+            <p>Lily and Sparkles</p>
+        </div>
+        <div class="gallery-item" tabindex="0">
+            <img src="tutorial/preminger.jpg" alt="preminger">
+            <p>Preminger</p>
+        </div>
+        <div class="gallery-item" tabindex="0">
+            <img src="tutorial/tika.jpg" alt="tika">
+            <p>Tika</p>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <a href="#top" class="btn-next" tabindex="0">Next</a>
+    </div>
+
+    <script src="tab-counter.js"></script>
+
+
+</body>
+
+</html>

@@ -64,3 +64,7 @@ body {
     white-space: nowrap;
     /* Prevent text wrapping */
 }
+
+.highlight {
+    background-color: yellow;
+}

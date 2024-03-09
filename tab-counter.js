@@ -22,16 +22,37 @@ document.addEventListener('DOMContentLoaded', function () {
             updateDisplay();
         });
     }
+
+    // Highlight gallery item on Enter key press and remove highlight on Tab or Shift+Tab press
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        item.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                removeHighlight();
+                this.classList.add('highlight');
+            }
+        });
+
+        item.addEventListener('blur', function (event) {
+            this.classList.remove('highlight');
+        });
+    });
 });
 
-// Since JavaScript cannot directly write to a file, we use localStorage for demonstration
+// Function to remove highlight from all items
+function removeHighlight() {
+    document.querySelectorAll('.gallery-item.highlight').forEach(item => {
+        item.classList.remove('highlight');
+    });
+}
+
+// Save and Load tab count to/from localStorage
 function saveCount() {
     localStorage.setItem('tabCount', tabCount);
 }
 
-window.onbeforeunload = saveCount; // Save the count when the user leaves the page
+window.onbeforeunload = saveCount;
 
-// Load the saved count when the page loads
 document.addEventListener('DOMContentLoaded', function () {
     const savedCount = localStorage.getItem('tabCount');
     if (savedCount !== null) {
