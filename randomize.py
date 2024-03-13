@@ -9,7 +9,7 @@ def collect_gallery_items(directory):
 
     for root, _, files in os.walk(directory):
         for file in files:
-            if file.endswith('.html'):
+            if file.endswith('.html') and file != 'tutorial.html':
                 file_path = os.path.join(root, file)
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
