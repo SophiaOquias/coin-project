@@ -1,4 +1,4 @@
-1. To access the tutorial page, open ```tutorial.html```
+1. To access the tutorial page, open ```tutorial.html```. This is just to familiarize participants with keyboard-only navigation before proceeding to the actual experiment.
 2. Run ```randomize.py``` in the CMD to randomize the order of the cards before displaying the prototype to participants.
 3. To view the prototype, open ```index.html```. For blind participants, Window's built-in Narrator is to be used as the screen reader.
 
